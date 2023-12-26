@@ -1,0 +1,70 @@
+.sliderContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+
+    .slider{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        background-color: transparent;
+        background-image: url("https://papeldeparededecore.com.br/820-medium_default/papel-de-parede-3d-formas-geometricas-com-efeito-de-splash-em-tons-coloridos.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        height: 100vh;
+
+        .sliderContentText{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            text-align: center;
+
+            padding: 0 1rem;
+            background-color: transparent;
+
+            h1{
+                font-size: clamp(1rem, 8vw, 2rem);
+                font-weight: 400;
+                margin-bottom: 1rem;
+                
+                letter-spacing: 3px;
+            }
+
+            p{
+                font-size: clamp(1rem, 6vw, 3rem);
+                margin-bottom: 1rem;
+            }
+        }
+        .sliderContentImage{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            max-width: 1000px;
+
+            overflow: hidden;
+            background-color: transparent;
+
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+}
