@@ -16,7 +16,7 @@
         flex-direction: column;
 
         background-color: transparent;
-        background-image: url("https://papeldeparededecore.com.br/820-medium_default/papel-de-parede-3d-formas-geometricas-com-efeito-de-splash-em-tons-coloridos.jpg");
+        background-image: url("https://as2.ftcdn.net/v2/jpg/04/82/60/55/1000_F_482605566_hs4lZwFXAU0rQoqbNopK74zQ5g0cEt0R.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -61,9 +61,29 @@
 
             overflow: hidden;
             background-color: transparent;
+            
+            padding: 1rem;
 
             img{
                 object-fit: cover;
+            }
+
+            .sliderSkip{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                width: 100%;
+                height: 100%;
+
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                background: transparent;
+                cursor: pointer;
+                
             }
         }
     }

@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import "@/styles/globals.scss";
+import Providers from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link
+          rel="icon"
+          type="image/png"
+          href="https://cdn-icons-png.flaticon.com/512/2589/2589903.png"
+        />
+      </head>
+      <body className={inter.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

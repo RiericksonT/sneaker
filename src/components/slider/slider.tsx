@@ -57,11 +57,17 @@ export default function Slider({ slide }: { slide: SlideProps[] }) {
         <div className={styles.sliderContentText}>
           <h1
             className={styles.sliderContentTextTitle}
-            style={{ boxShadow: `3px 5px ${slide[index].color}` }}
+            style={{
+              boxShadow: `3px 5px white`,
+              background: slide[index].color,
+            }}
           >
             {slide[index]?.title}
           </h1>
-          <p className={styles.sliderContentTextDescription}>
+          <p
+            className={styles.sliderContentTextDescription}
+            style={{ background: slide[index]?.color }}
+          >
             {slide[index]?.description}
           </p>
           <a
